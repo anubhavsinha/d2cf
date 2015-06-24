@@ -3,15 +3,19 @@
 <head>
 <link rel="stylesheet" href="joint.css" />
 <script src="joint.js"></script>
+<style>
+#myholder{border: 1px solid #cccccc;}
+</style>
 </head>
 <body>
+  <div id="myholder"></div>
 <script>
 var graph = new joint.dia.Graph;
 
 var paper = new joint.dia.Paper({
     el: $('#myholder'),
-    width: 600,
-    height: 200,
+
+
     model: graph,
     gridSize: 1
 });
