@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="joint.css" />
 <script src="joint.js"></script>
 <style>
-#myholder{border: 1px solid #cccccc;}
+#myholder{border: 1px solid #cccccc;height:540px;}
+.flux7{color:#ccc;font-size: 14px;}
 </style>
 </head>
-<body>
+<body class="container">
+  <h2>d2cf<span class="flux7">by Flux7 Labs</span></h2>
   <div id="myholder"></div>
 <script>
 var graph = new joint.dia.Graph;
@@ -37,5 +41,6 @@ var link = new joint.dia.Link({
 graph.addCells([rect, rect2, link]);
 
 </script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
 </html>
