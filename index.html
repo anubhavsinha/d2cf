@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#c{border:1px solid #cccccc; width:600px; height:400px;}
+
+</style>
+
+</head>
+
+<body>
+
+<canvas id="c"></canvas>
+
+<script>
+
+board = document.querySelector("#c");
+canvas = board.context("2d");
+img = new Image();
+img.onload = function(){
+  canvas.drawImage(img, 0, 0, board.width, board.height);
+
+};
+
+img.src = "shinchan.jpg";
+
+</script>
+
+
+</body>
+
+</html>
